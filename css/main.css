@@ -1,0 +1,930 @@
+@font-face {
+  font-family: "Muller LCG";
+  src: url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --whiteColor: rgba(255, 255, 255, 1);
+  --primaryColor: rgba(240, 191, 95, 1);
+  --secondaryColor1: rgba(204, 153, 51, 1);
+  --accentColor: rgba(164, 115, 18, 1);
+  --backgroundColor1: rgba(206, 232, 250, 1);
+  --backgroundColor2: rgba(241, 241, 241, 1);
+  --backgroundColor3: rgba(233, 233, 233, 1);
+  --textColor1: rgba(153, 153, 153, 1);
+  --textColor2: rgba(102, 102, 102, 1);
+  --textColor3: rgba(51, 51, 51, 1);
+  --blackColor: rgba(0, 0, 0, 1);
+}
+
+body {
+  margin: 0;
+  background-color: #F1F1F1;
+  ;
+  font-family: "Muller", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* < !--============header=============--> */
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-block {
+  display: flex;
+  gap: 16px;
+  background-color: var(--primaryColor);
+  border-radius: 15px;
+}
+
+.img-logo-one {
+  padding-left: 23px;
+}
+
+.logo-img-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.logo-tel {
+  color: var(--textColor2);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.logo-user {
+  padding-left: 30px;
+  background: url(../img/keyboard_tab.svg) no-repeat;
+  background-position-y: center;
+  color: var(--secondaryColor1);
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo-user:hover {
+  color: var(--primaryColor);
+}
+
+.logo-user:focus {
+  color: var(--secondaryColor2);
+}
+
+.logo-user:active {
+  color: var(--accentColor);
+}
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 114px;
+  line-height: 1;
+  background-color: var(--whiteColor);
+  border-radius: 12px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 45px;
+  padding: 27px 0px 27px 45px;
+}
+
+.nav-item {
+  color: var(--textColor2);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav-item:hover {
+  color: var(--secondaryColor1);
+}
+
+.nav-item:focus {
+  color: var(--secondaryColor2);
+}
+
+.nav-item:active {
+  color: var(--accentColor);
+}
+
+
+.nav-button-container {
+  display: flex;
+  gap: 40px;
+}
+
+
+.nav-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: var(--secondaryColor1);
+  background-color: transparent;
+  border: 1px solid var(--secondaryColor1);
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  color: var(--whiteColor);
+  background-color: var(--secondaryColor1);
+}
+
+.nav-btn:focus {
+  color: var(--whiteColor);
+  background-color: var(--secondaryColor2);
+}
+
+.nav-btn:active {
+  color: var(--whiteColor);
+  background-color: var(--accentColor);
+}
+
+/* < !--============header=============--> */
+
+/* < !--============main=============--> */
+/* < !--============Спецпредложение=============--> */
+.block-bron {
+  display: flex;
+  padding-top: 70px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+  color: var(--textColor3);
+  padding: 0px 0px 22px 42px;
+}
+
+.block_left_specialoffer {
+  display: flex;
+  gap: 24px;
+}
+
+.maldives__container {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0.00) 65.7%), url(../img/Rectangle14.png);
+  opacity: 0.9;
+}
+
+.maldives__container,
+.kipr__container {
+  padding: 40px 235px 40px 40px;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.kipr__container {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0.00) 65.7%), url(../img/Rectangle15.png);
+  opacity: 0.9;
+  margin-top: 1.4rem;
+}
+
+.kipr__container {
+  padding: 40px 220px 40px 40px;
+}
+
+.malduves__title,
+.kipr__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--whiteColor);
+}
+
+.maldives__description,
+.kipr__descriprion {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--whiteColor);
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+.img-right-block {
+  background: url(../img/22.png) center no-repeat;
+  background-size: cover;
+  color: var(--whiteColor);
+  padding-left: 35px;
+  padding-bottom: 30px;
+  border-radius: 12px;
+}
+
+.section-specialoffer-aside {
+  padding: 212px 45px 5px 5px;
+}
+
+.section-specialoffer-subtitle-right {
+  font-size: 60px;
+  padding-bottom: 25px;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.section-specialoffer-text {
+  color: var(--whiteColor);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.8;
+  padding-bottom: 47px;
+}
+
+.section-specialoffer-link {
+  font-size: 16px;
+  color: var(--primaryColor);
+}
+
+.section-specialoffer-link {
+  background: url(../img/Rectangle\ 2.svg) right no-repeat;
+  padding-right: 15px;
+}
+
+/* < !--============Спецпредложение=============--> */
+
+/* < =========  О нас  ========= > */
+
+.about-us-block {
+  padding-top: 70px;
+}
+
+.section-about-text {
+  font-size: 16px;
+  color: var(--textColor3);
+  padding-right: 140px;
+  line-height: 2;
+}
+
+/* < =========  О нас  ========= > */
+
+/* < =========  услуги  ========= > */
+
+.services-container {
+  padding-top: 70px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.services-item {
+  background-color: var(--whiteColor);
+  border-radius: 12px;
+  width: 570px;
+}
+
+.services-block-one {
+  padding: 195px 100px 40px 45px;
+}
+
+.services-subtitle {
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--secondaryColor1);
+}
+
+.services-subtitle {
+  background: url(../img/Rectangle3.svg) transparent no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  padding-right: 25px;
+}
+
+.services-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--blackColor);
+}
+
+.services-block {
+  background: url(../img/1.jpg) no-repeat;
+  border-radius: 12px;
+}
+
+/* картинки для карточек секция УСЛУГИ */
+.two {
+  background: url(../img/2.png) no-repeat;
+}
+
+.three {
+  background: url(../img/3.png) no-repeat;
+}
+
+.four {
+  background: url(../img/4.png) no-repeat;
+}
+
+/* < =========  услуги  ========= > */
+
+/* < =========  Преимущества  ========= > */
+
+.advantage {
+  padding-top: 70px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.advantage-item {
+  width: 275px;
+  padding-bottom: 40px;
+  margin-bottom: 25px;
+  background-color: var(--whiteColor);
+  border-radius: 12px;
+  background-image: url(../img/bathtub.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 20%;
+  background-position-y: 20%;
+}
+
+.advantage-text {
+  padding-top: 115px;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+/* иконки карточек блока ПРЕИМУЩЕСТВА */
+.advantage-two {
+  background-image: url(../img/hanger.svg);
+}
+
+.advantage-three {
+  background-image: url(../img/heating.svg);
+}
+
+.advantage-four {
+  background-image: url(../img/hotel-key.svg);
+}
+
+.advantage-five {
+  background-image: url(../img/parking.svg);
+}
+
+.advantage-six {
+  background-image: url(../img/reception.svg);
+}
+
+.advantage-seven {
+  background-image: url(../img/security-box.svg);
+}
+
+.advantage-eight {
+  background-image: url(../img/swimming-pool.svg);
+}
+
+.advantage-two,
+.advantage-three,
+.advantage-four,
+.advantage-five,
+.advantage-six,
+.advantage-seven,
+.advantage-eight {
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* иконки карточек блока ПРЕИМУЩЕСТВА */
+
+.advantage-text {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--blackColor);
+}
+
+/* < =========  Преимущества  ========= > */
+
+/* < =========  Размещение  ========= > */
+
+.accommodation-container {
+  padding-top: 43px;
+}
+
+.accommodation-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.accommodation-item {
+  width: 373px;
+  background-color: var(--whiteColor);
+  padding-bottom: 40px;
+  border-radius: 12px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.accommodation-img {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.accommodation-block-one {
+  padding-top: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.accommodation-block-price-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accommodation-description-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0px 20px 0px;
+}
+
+.accommodation-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.accommodation-price {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.accommodation-text-one {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--textColor1);
+}
+
+.accommodation-text {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--textColor1);
+}
+
+.accommodation-span {
+  font-size: 16px;
+  color: var(--blackColor);
+}
+
+.accommodation-button {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 30px;
+  cursor: pointer;
+  color: var(--secondaryColor1);
+  background-color: transparent;
+  border: 1px solid var(--secondaryColor1);
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.accommodation-button:hover {
+  color: var(--whiteColor);
+  background: var(--secondaryColor1);
+  border: none;
+}
+
+.accommodation-block-img {
+  display: inline-block;
+  padding-left: 30px;
+  letter-spacing: 3px;
+}
+
+.accommodation-link {
+  font-size: 22px;
+  color: var(--whiteColor);
+}
+
+.accommodation-link {
+  padding-right: 30px;
+  background-size: contain;
+  background: url(../img/Rectangle2.svg) center center no-repeat transparent;
+  background-position-x: right;
+}
+
+.acmd {
+  display: flex;
+  align-items: end;
+  padding-bottom: 55px;
+  justify-content: center;
+  background: url(../img/41.jpg) no-repeat;
+}
+
+/* < =========  Размещение  ========= > */
+
+/* ============ Хочу Тур  =============  */
+
+.want-tour-wrapper {
+  background-color: var(--backgroundColor3);
+  border-radius: 15px;
+  padding: 45px;
+}
+
+.heading-wrapper {
+  padding-left: 0px;
+}
+
+.want-tour-wrapper-white {
+  background-color: var(--whiteColor);
+  border-radius: 15px;
+}
+
+.want-tour-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+}
+
+.want-tour-list li:nth-child(4),
+.want-tour-list li:nth-child(5) {
+  width: 111px;
+}
+
+.want-tour-fieldset {
+  border: none;
+}
+
+.want-tour-legend {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.want-tour-choose {
+  font-size: 16px;
+  border: none;
+}
+
+.want-tour-choose {
+  appearance: none;
+  border-radius: 4px;
+  width: 100%;
+  padding-right: 25px;
+  background-image: url("../img/Rectangle-black.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.want-tour-choose::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+}
+
+.want-tour-data {
+  border: none;
+}
+
+.want-item-number {
+  border-bottom: 1px solid var(--backgroundColor3);
+}
+
+.want-tour-number {
+  border: none;
+}
+
+
+
+/* ============ Хочу Тур  =============  */
+
+/* ============ КОНТАКТЫ =============  */
+.section-contact {
+  padding-top: 4.5rem;
+}
+
+.form-info {
+  display: flex;
+  background-color: var(--whiteColor);
+  border-radius: 15px;
+  padding: 45px;
+  margin-bottom: 40px;
+  gap: 50px;
+}
+
+.form-contact-left {
+  width: 40%;
+}
+
+/* =========== contact_left =========== */
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.contact-heading {
+  font-size: 22px;
+  color: var(--blackColor);
+}
+
+.contact-item {
+  border-bottom: 1px solid var(--backgroundColor3);
+}
+
+.contact-item {
+  display: flex;
+  padding: 25px 0px;
+}
+
+.contact-item:first-child {
+  padding-top: 0;
+  /*  <- Убираем паддинг у первого блока  */
+}
+
+.contact-heading-block2 {
+  line-height: 1.5;
+  padding-left: 100px;
+}
+
+.contact-maps {
+  font-size: 16px;
+}
+
+.contact-tel {
+  font-size: 16px;
+  color: var(--secondaryColor1);
+}
+
+.contact-tel:hover {
+  color: var(--secondaryColor1);
+}
+
+.contact-tel:focus {
+  color: var(--secondaryColor2);
+}
+
+.contact-tel:active {
+  color: var(--accentColor);
+}
+
+.contact-link {
+  display: block;
+  font-size: 16px;
+  color: var(--secondaryColor1);
+}
+
+.contact-link:hover {
+  color: var(--secondaryColor1);
+}
+
+.contact-link:focus {
+  color: var(--secondaryColor2);
+}
+
+.contact-link:active {
+  color: var(--accentColor);
+}
+
+.contack-block {
+  line-height: 1.5;
+  padding-left: 60px;
+  padding-right: 80px;
+}
+
+.mail-block {
+  line-height: 1.5;
+  padding-left: 115px;
+}
+
+.contact-span {
+  line-height: 1.5;
+  padding-left: 90px;
+  padding-right: 55px;
+}
+
+.btn-left-contact {
+  font-size: 16px;
+  padding: 30px 35px;
+  cursor: pointer;
+  color: var(--secondaryColor1);
+  background-color: transparent;
+  border: 1px solid var(--secondaryColor1);
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.btn-left-contact:hover {
+  color: var(--whiteColor);
+  background: var(--secondaryColor1);
+  border: 1px solid var(--secondaryColor1);
+}
+
+/* =========== contact_left =========== */
+
+/* ============contact_right============ */
+.container-right {
+  display: flex;
+}
+
+/* ============contact_right============ */
+
+/* ============ Footer ============ */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 50px 0px 50px;
+  background-color: var(--textColor3);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  color: var(--whiteColor);
+}
+
+/* === Footer-left === */
+.footer-left {
+  width: 30%;
+  margin-right: 100px;
+}
+
+.footer-left-text {
+  line-height: 2;
+  padding-bottom: 45px;
+}
+
+.footer-left-text:last-child {
+  color: var(--secondaryColor1);
+}
+
+/* === Footer-left === */
+
+/* === Footer_center === */
+
+.footer-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 2;
+}
+
+.footer-contack-block,
+.footer-mail-block {
+  /* display: flex;
+  flex-direction: column; */
+  padding-top: 15px;
+  line-height: 2;
+}
+
+.footer-container-phone, .footer-container-mail {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.footer-logo-img {
+  position: relative;
+  top: 100px;
+  left: -100px;
+}
+
+.contact-mail {
+  color: var(--secondaryColor1);
+}
+
+.contact-mail:hover {
+  color: var(--secondaryColor1);
+}
+
+.contact-mail:focus {
+  color: var(--secondaryColor2);
+}
+
+.contact-mail:active {
+  color: var(--accentColor);
+}
+
+/* === Footer_center === */
+
+/* === Footer_right === */
+
+.footer-right {
+  width: 24%;
+}
+
+.footer-right-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-right-icons {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-right-icons:hover path {
+  fill: var(--secondaryColor1);
+}
+
+.footer-right-icons:active path {
+  fill: var(--secondaryColor1);
+}
+
+.footer-right-icons:visited path {
+  fill: var(--accentColor);
+}
+
+/* === Footer_right === */
+
+/* ============ Footer ============ */
