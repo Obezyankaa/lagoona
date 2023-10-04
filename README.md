@@ -15,7 +15,7 @@ Lagoona - это вымышленная сеть отелей. Верстка в
 ## Установка и запуск
 Клонируйте репозиторий:
 ```bash
-git clone [https://github.com/Obezyankaa/lagoona.git]
+https://github.com/Obezyankaa/lagoona.git
 ```
 Откройте файл index.html в вашем браузере.
 ![preview](./preview.png)
