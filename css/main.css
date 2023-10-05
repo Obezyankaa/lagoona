@@ -647,7 +647,7 @@ img {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  padding: 13px 30px;
+  padding: 13px 20px;
   cursor: pointer;
   color: var(--secondaryColor1);
   background-color: transparent;
@@ -753,7 +753,7 @@ img {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 28px;
+  padding: 32px 28px;
 }
 
 .want-tour-list li:nth-child(4),
@@ -807,10 +807,49 @@ img {
 }
 
 .want-tour-number {
+  width: 121px;
   border: none;
 }
 
+.want-tour-list li:nth-child(1),
+.want-tour-list li:nth-child(2) {
+  width: 169px;
+}
 
+.want-tour-list li:nth-child(3),
+.want-tour-list li:nth-child(4),
+.want-tour-list li:nth-child(5) {
+  width: 121px;
+}
+
+.want-tour-btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 30px;
+  cursor: pointer;
+  color: var(--secondaryColor1);
+  background-color: transparent;
+  border: 1px solid var(--secondaryColor1);
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.want-tour-btn:focus {
+  color: var(--whiteColor);
+  background-color: var(--secondaryColor2);
+}
+
+.want-tour-btn:hover {
+  color: var(--whiteColor);
+  background-color: var(--secondaryColor1);
+}
+
+
+.want-tour-btn:active {
+  color: var(--whiteColor);
+  background-color: var(--accentColor);
+}
 
 /* ============ Хочу Тур  =============  */
 
