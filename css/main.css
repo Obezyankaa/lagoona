@@ -121,8 +121,9 @@ img {
 }
 
 .logo-tel:focus {
-  border: 1px solid var(--secondaryColor1);
-  color: var(--secondaryColor2);
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 5px;
+  color: var(--secondaryColor1);
 }
 
 .logo-tel:hover {
@@ -141,13 +142,18 @@ img {
   cursor: pointer;
 }
 
+
 .logo-container-auth:focus .logo-user {
-  color: var(--secondaryColor2);
+  color: var(--secondaryColor1);
 }
 
-.logo-container-auth:hover .logo-user-icons path {
-  transition: fill 0.3s;
-  fill: var(--secondaryColor2);
+.logo-container-auth:focus .logo-user-icons path {
+  fill: var(--secondaryColor1);
+}
+
+.logo-container-auth:focus {
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 5px;
 }
 
 .logo-container-auth:hover .logo-user {
@@ -155,6 +161,7 @@ img {
 }
 
 .logo-container-auth:hover .logo-user-icons path {
+  transition: fill 0.3s;
   fill: var(--primaryColor);
 }
 
@@ -207,7 +214,9 @@ img {
 }
 
 .nav-item:focus {
-  color: var(--secondaryColor2);
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 5px;
+  color: var(--secondaryColor1);
 }
 
 .nav-item:hover {
@@ -236,12 +245,12 @@ img {
   background-color: transparent;
   border: 1px solid var(--secondaryColor1);
   border-radius: 12px;
-  transition: background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .nav-btn:focus {
   color: var(--whiteColor);
-  background-color: var(--secondaryColor2);
+  background-color: var(--secondaryColor1);
 }
 
 .nav-btn:hover {
@@ -253,6 +262,7 @@ img {
 .nav-btn:active {
   color: var(--whiteColor);
   background-color: var(--accentColor);
+  border: 1px solid var(--accentColor);
 }
 
 /* < !--============header=============--> */
@@ -352,6 +362,11 @@ img {
   transition: color 0.3s;
 }
 
+.article-block:focus-within {
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 8px;
+}
+
 .section-specialoffer-link:active {
   color: var(--whiteColor);
 }
@@ -418,6 +433,11 @@ img {
 
 .services-subtitleicons-icon path {
   transition: stroke 0.3s;
+}
+
+.services-block-border:focus-within {
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 8px;
 }
 
 .services-link:focus .services-subtitleicons-icon path {
@@ -644,12 +664,12 @@ img {
   background-color: transparent;
   border: 1px solid var(--secondaryColor1);
   border-radius: 12px;
-  transition: background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .accommodation-button:focus {
   color: var(--whiteColor);
-  background-color: var(--secondaryColor2);
+  background-color: var(--secondaryColor1);
 }
 
 .accommodation-button:hover {
@@ -661,6 +681,7 @@ img {
 .accommodation-button:active {
   color: var(--whiteColor);
   background-color: var(--accentColor);
+  border: 1px solid var(--accentColor);
 }
 
 .accommodation-block-img {
@@ -847,12 +868,12 @@ img {
   background-color: transparent;
   border: 1px solid var(--secondaryColor1);
   border-radius: 12px;
-  transition: background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .want-tour-btn:focus {
   color: var(--whiteColor);
-  background-color: var(--secondaryColor2);
+  background-color: var(--secondaryColor1);
 }
 
 .want-tour-btn:hover {
@@ -864,6 +885,7 @@ img {
 .want-tour-btn:active {
   color: var(--whiteColor);
   background-color: var(--accentColor);
+  border: 1px solid var(--accentColor);
 }
 
 /* ============ Хочу Тур  =============  */
@@ -928,7 +950,8 @@ img {
 }
 
 .contact-tel:focus {
-  border: 1px solid var(--secondaryColor1);
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 5px;
   color: var(--secondaryColor1);
 }
 
@@ -953,8 +976,9 @@ img {
 }
 
 .contact-link:focus {
-  border: 1px solid var(--secondaryColor1);
-  color: var(--secondaryColor2);
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 5px;
+  color: var(--secondaryColor1);
 }
 
 .contact-link:hover {
@@ -991,7 +1015,7 @@ img {
   background-color: transparent;
   border: 1px solid var(--secondaryColor1);
   border-radius: 12px;
-  transition: background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
 
 .btn-left-contact:focus {
@@ -1051,8 +1075,9 @@ img {
 }
 
 .footer-left-text-link:focus {
-  border: 1px solid var(--secondaryColor1);
-  color: var(--secondaryColor2);
+  outline: 1px solid var(--secondaryColor1);
+  outline-offset: 5px;
+  color: var(--secondaryColor1);
 }
 
 .footer-left-text-link:hover {
