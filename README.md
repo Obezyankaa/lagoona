@@ -1,16 +1,16 @@
-# Lagoona сеть отелей 
-Проектная работа по верстке сайта для сети отелей Lagoona.
-## О проекте
-Lagoona - это вымышленная сеть отелей. Верстка выполнена на основе предоставленных макетов и требований заказчика.
+# Lagoona Hotel Chain
+Website Design Project for the Lagoona Hotel Chain.
+## About the Project
+Lagoona is a fictional hotel chain. The design was based on provided layouts and client requirements.
 
-## Технологический стек
+## Technological Stack
 * HTML 
-* CSS (SCSS, Flexbox, Grid и т.д.)
-* JavaScript (без использования библиотек и фреймворков)
-## Особенности проекта
-* Адаптивная верстка под все устройства
-* Кроссбраузерность
-* Использование семантических элементов
+* CSS (SCSS, Flexbox, Grid, etc)
+* JavaScript (without the use of libraries or frameworks)
+## Project Highlights
+* Responsive design for all devices
+* Cross-browser compatibility
+* Utilization of semantic elements
 
 <!-- ## Установка и запуск
 Клонируйте репозиторий:
