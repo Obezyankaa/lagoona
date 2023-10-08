@@ -204,7 +204,7 @@ img {
   padding: 27px 0px 27px 45px;
 }
 
-.nav-item {
+.nav-link {
   color: var(--textColor2);
   font-size: 16px;
   font-style: normal;
@@ -213,18 +213,18 @@ img {
   transition: color 0.3s;
 }
 
-.nav-item:focus {
+.nav-link:focus {
   outline: 1px solid var(--secondaryColor1);
   outline-offset: 5px;
   color: var(--secondaryColor1);
 }
 
-.nav-item:hover {
+.nav-link:hover {
   color: var(--secondaryColor1);
 }
 
 
-.nav-item:active {
+.nav-link:active {
   color: var(--accentColor);
 }
 
